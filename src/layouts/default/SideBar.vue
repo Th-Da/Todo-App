@@ -17,8 +17,6 @@
           </template>
         </v-list-item>
 
-        <v-divider></v-divider>
-
         <v-list density="compact" nav>
           <v-list-item
             prepend-icon="mdi-home-city"
@@ -37,7 +35,10 @@
           ></v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <v-main></v-main>
+      <v-main>
+        <InputFields></InputFields>
+        <Notes></Notes>
+      </v-main>
     </v-layout>
   </v-card>
 </template>
@@ -47,6 +48,11 @@
   height: 100vh;
 }
 </style>
+
+<script setup lang="ts">
+import InputFields from "./InputFields.vue";
+import Notes from "./Notes.vue";
+</script>
 
 <script lang="ts">
 export default {

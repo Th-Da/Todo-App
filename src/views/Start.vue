@@ -1,13 +1,9 @@
 <template>
-  <Notes />
+  <Main />
 </template>
 
-<style scoped>
-main {
-  height: 100%;
-}
-</style>
+<style scoped></style>
 
 <script lang="ts" setup>
-import Notes from "@/components/Notes.vue";
+import Main from "@/components/Main.vue";
 </script>

@@ -11,7 +11,7 @@ import "material-icons/iconfont/material-icons.css";
 import App from "./App.vue";
 
 // Composables
-import { createApp } from "vue";
+import { createApp, watch } from "vue";
 
 // Plugins
 import { registerPlugins } from "@/plugins";

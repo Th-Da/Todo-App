@@ -46,6 +46,7 @@
 <style scoped>
 .v-main {
   height: 100vh;
+  overflow-y: scroll;
 }
 </style>
 
@@ -59,11 +60,6 @@ export default {
   data() {
     return {
       drawer: true,
-      items: [
-        { title: "Home", icon: "mdi-home-city" },
-        { title: "My Account", icon: "mdi-account" },
-        { title: "Users", icon: "mdi-account-group-outline" },
-      ],
       rail: true,
     };
   },

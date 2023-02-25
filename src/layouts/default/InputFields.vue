@@ -1,40 +1,29 @@
 <template>
   <div class="wrapper">
-    <form @submit.prevent="onSubmit()">
-      <v-container class="text-input">
-        <v-text-field
-          type="text"
-          max-width="344"
-          label="Titel"
-          variant="solo"
-          hide-details
-          class="textfield"
-          v-model="todoTitle"
-        ></v-text-field>
+    <v-container class="text-input">
+      <v-text-field
+        type="text"
+        max-width="344"
+        label="Titel"
+        variant="solo"
+        hide-details
+        class="textfield"
+        v-model="todoTitle"
+      ></v-text-field>
 
-        <v-textarea
-          type="text"
-          bg-color="light-blue"
-          name="input-7-1"
-          variant="filled"
-          label="Todo Text"
-          auto-grow
-          v-model="todoText"
-        >
-        </v-textarea>
-      </v-container>
-      <v-btn
-        type="submit"
-        e.prevent-default
-        class="add-button"
-        variant="outlined"
-        size="large"
-        icon
-        color="info"
+      <v-textarea
+        type="text"
+        bg-color="light-blue"
+        name="input-7-1"
+        variant="filled"
+        label="Todo Text"
+        auto-grow
+        append-inner-icon="mdi-pencil-plus-outline"
+        v-model="todoText"
+        @click:append-inner="onSubmit()"
       >
-        <v-icon>mdi-pencil</v-icon>
-      </v-btn>
-    </form>
+      </v-textarea>
+    </v-container>
   </div>
 </template>
 

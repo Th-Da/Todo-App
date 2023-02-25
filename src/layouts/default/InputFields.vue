@@ -70,7 +70,7 @@ export default defineComponent({
       //   return;
       // }
 
-      this.store.addTodo(this.todoTitle, this.todoText);
+      this.store.addTodo(this.todoTitle, this.todoText, new Date());
       this.todoTitle = "";
       this.todoText = "";
     },

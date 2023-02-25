@@ -37,6 +37,7 @@
       </v-navigation-drawer>
       <v-main>
         <InputFields></InputFields>
+        <FilterTodos class="d-flex justify-center"></FilterTodos>
         <Notes></Notes>
       </v-main>
     </v-layout>
@@ -53,6 +54,7 @@
 <script setup lang="ts">
 import InputFields from "./InputFields.vue";
 import Notes from "./Notes.vue";
+import FilterTodos from "./FilterTodos.vue";
 </script>
 
 <script lang="ts">

@@ -4,17 +4,23 @@
       <v-card class="single-card" variant="outlined">
         <v-card-item>
           <div>
-            <div class="text-caption mb-1">Date</div>
+            <div class="text-caption mb-1">{{ todo.date }}</div>
             <div class="text-h6 mb-1">{{ todo.title }}</div>
             <div class="text-Body-2">
               {{ todo.text }}
             </div>
           </div>
         </v-card-item>
-
-        <v-card-actions>
-          <v-btn variant="outlined"> Button </v-btn>
-        </v-card-actions>
+        <div class="d-flex buttons">
+          <v-card-actions>
+            <v-btn variant="outlined" @click="store.deleteTodo(todo.id)">
+              Delete
+            </v-btn>
+          </v-card-actions>
+          <v-card-actions>
+            <v-btn variant="outlined"> Save </v-btn>
+          </v-card-actions>
+        </div>
       </v-card>
     </div>
   </v-container>
@@ -37,6 +43,16 @@
 
 .v-card-actions {
   margin-top: auto;
+}
+
+.text-Body-2 {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
 }
 </style>
 

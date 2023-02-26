@@ -18,7 +18,7 @@
             </v-btn>
           </v-card-actions>
           <v-card-actions>
-            <v-btn variant="outlined"> Save </v-btn>
+            <v-btn variant="outlined"> Change </v-btn>
           </v-card-actions>
         </div>
       </v-card>

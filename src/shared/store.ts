@@ -29,12 +29,13 @@ export const todoStore = defineStore("todoState", {
     },
 
     filterByDate() {
-      this.todos.sort((a, b) => a._date.getTime() - b._date.getTime());
+      this.todos.sort(
+        (b, a) => new Date(b._date).getTime() - new Date(a._date).getTime()
+      );
       console.log(this.todos);
     },
 
     filterByPriority() {
-      this.todos = this.todos.sort((a, b) => b._date - a._date);
       console.log(this.todos);
     },
   },

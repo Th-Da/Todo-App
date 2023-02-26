@@ -1,6 +1,5 @@
 import type { Todo } from "@/shared/Todo-Interface";
 import { defineStore } from "pinia";
-import { watch } from "vue";
 
 export const todoStore = defineStore("todoState", {
   state: () => {
@@ -32,11 +31,16 @@ export const todoStore = defineStore("todoState", {
       this.todos.sort(
         (b, a) => new Date(b._date).getTime() - new Date(a._date).getTime()
       );
-      console.log(this.todos);
     },
 
     filterByPriority() {
-      console.log(this.todos);
+      this.todos.sort((a, b) => {
+        b.priority - a.priority;
+      });
+    },
+
+    setPriority(prio: boolean) {
+      prio ? (this.todos.priority = false) : (this.todos.priority = true);
     },
   },
 });

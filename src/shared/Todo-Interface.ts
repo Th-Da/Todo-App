@@ -4,4 +4,5 @@ export interface Todo {
   _date: Date;
   title: string;
   text: string;
+  priority?: boolean;
 }

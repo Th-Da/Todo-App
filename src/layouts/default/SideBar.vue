@@ -24,14 +24,14 @@
             value="home"
           ></v-list-item>
           <v-list-item
-            prepend-icon="mdi-account"
-            title="My Account"
-            value="account"
+            prepend-icon="mdi-checkbox-multiple-marked-outline"
+            title="Important Todos"
+            value="prio"
           ></v-list-item>
           <v-list-item
-            prepend-icon="mdi-account-group-outline"
-            title="Users"
-            value="users"
+            prepend-icon="mdi-trash-can"
+            title="deleted"
+            value="deleted"
           ></v-list-item>
         </v-list>
       </v-navigation-drawer>
